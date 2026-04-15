@@ -1,5 +1,5 @@
 pkgname = "noctalia-shell"
-pkgver = "4.7.5"
+pkgver = "4.7.6"
 pkgrel = 0
 depends = [
     "brightnessctl",
@@ -13,7 +13,7 @@ pkgdesc = "Sleek and minimal desktop shell"
 license = "MIT"
 url = "https://github.com/noctalia-dev/noctalia-shell"
 source = f"{url}/archive/v{pkgver}.tar.gz"
-sha256 = "0753481c8993a0124a0afde42d129944a543707641a8c9a39f284a8e3c460e11"
+sha256 = "0b53aa9f2d20034be2e34fc412cdfb0e67a0bb79fe068076183404991a3709d1"
 
 # There are optional dependencies for noctalia one could install
 # cliphist: clipboard history support
