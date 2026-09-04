@@ -1,0 +1,23 @@
+diff --git a/meson.build b/meson.build
+index 4ee4237291..6045639416 100644
+--- a/meson.build
++++ b/meson.build
+@@ -839,18 +839,6 @@
+     args: [files('tests/session_launcher.sh'), start_umbriel, test_start_umbriel],
+   )
+ endif
+-configure_file(
+-  input: 'data/umbriel.service.in',
+-  output: 'umbriel.service',
+-  configuration: umbriel_session_config,
+-  install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user',
+-)
+-
+-install_data(
+-  'data/umbriel-session.target',
+-  'data/umbriel-shutdown.target',
+-  install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user',
+-)
+ 
+ install_data(
+   'examples/config.toml',
