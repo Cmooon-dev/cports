@@ -1,0 +1,23 @@
+diff --git a/meson.build b/meson.build
+index 482a44d665..fc6e3c93df 100644
+--- a/meson.build
++++ b/meson.build
+@@ -598,18 +598,6 @@
+   install_dir: get_option('bindir'),
+   install_mode: 'rwxr-xr-x',
+ )
+-configure_file(
+-  input: 'data/umbriel.service.in',
+-  output: 'umbriel.service',
+-  configuration: umbriel_session_config,
+-  install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user',
+-)
+-
+-install_data(
+-  'data/umbriel-session.target',
+-  'data/umbriel-shutdown.target',
+-  install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user',
+-)
+ 
+ install_data(
+   'examples/config.toml',
