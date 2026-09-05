@@ -1,0 +1,15 @@
+diff --git a/meson.build b/meson.build
+index b4e6c94..f375f92 100644
+--- a/meson.build
++++ b/meson.build
+@@ -131,10 +131,3 @@ configure_file(
+   configuration: conf_data,
+   install_dir: get_option('datadir') / 'dbus-1' / 'services',
+ )
+-
+-configure_file(
+-  input: 'data/xdg-desktop-portal-umbriel.service.in',
+-  output: 'xdg-desktop-portal-umbriel.service',
+-  configuration: conf_data,
+-  install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user',
+-)
